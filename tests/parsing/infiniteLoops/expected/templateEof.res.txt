@@ -1,1 +1,1 @@
-Fatal error: exception File "src/res_parser.ml", line 52, characters 23-29: Assertion failed
+Fatal error: exception File "src/res_parser.ml", line 56, characters 24-30: Assertion failed
