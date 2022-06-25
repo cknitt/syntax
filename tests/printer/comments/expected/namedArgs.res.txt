@@ -60,6 +60,4 @@ let make = (
   ~sidebar: React.element,
   ~breadcrumbs: option<list<UrlPath.breadcrumb>>=?,
   ~children,
-) => {
-  ()
-}
+) => {}

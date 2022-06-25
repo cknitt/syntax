@@ -4609,6 +4609,9 @@ and printBraces doc expr bracesLoc =
     bracesLoc.loc_end.pos_lnum > bracesLoc.loc_start.pos_lnum
   in
   match expr.Parsetree.pexp_desc with
+  | Pexp_construct ({txt = Longident.Lident "()"}, _) ->
+    (* print unit with braces as empty block *)
+    Doc.text "{}"
   | Pexp_letmodule _ | Pexp_letexception _ | Pexp_let _ | Pexp_open _
   | Pexp_sequence _ ->
     (* already has braces *)
